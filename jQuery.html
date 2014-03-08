@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#black").click(function () {
+                $("body").css({'background-color': 'black'});
+            });
+            $("#red").click(function () {
+                $("body").css({'background-color': 'red'});
+            });
+            $("#yellow").click(function () {
+                $("body").css({'background-color': 'yellow'});
+            });
+            $("#white").click(function () {
+                $("body").css({'background-color': 'white'});
+            });
+            $("#red_font").click(function () {
+                $(".fruits").css({'color': 'red'});
+            });
+            $("#black_font").click(function () {
+                $(".fruits").css({'color': 'black'});
+            });
+            $("#yellow_font").click(function () {
+                $(".fruits").css({'color': 'yellow'});
+            });
+            $("#dropdown").change(function () {
+                var temp = $(this).val();
+                $('button').css('font-size', temp + "px");
+            });
+            $("#orange").click(function () {
+                $('#image').prepend('<img src="http://www.orangelt.us/info/wp-content/uploads/2010/08/OrangeLT_White_Background-1024x985.jpg" />')
+            });
+            $("#banana").click(function () {
+                $('#image').prepend('<img src="http://www.fairtrasa.com/wp-content/themes/simplicity/functions/thumb.php?src=wp-content/uploads/2012/08/shutterstock_99478112.jpg&w=534&h=&zc=1&q=90" />')
+            });
+            $("#apple").click(function () {
+                $('#image').prepend('<img src="http://us.123rf.com/400wm/400/400/maxpayne222/maxpayne2221201/maxpayne222120100206/11834405-red-apple-isolated-on-white-background.jpg" />')
+            });
+        });
+    </script>
+
+    <style media="screen" type="text/css">
+        button {
+            box-shadow: 5px 5px 5px #888888;
+        }
+        .divider {
+            width: 5px;
+            height: auto;
+            display: inline-block;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="row">
+
+        <div class="col-xs-8">
+            <div style="text-align: center">
+                Change the background color of the entire page to
+                <br/>
+                <br/>
+
+                <div id="back_ground_color_buttons">
+                    <button id="black">Black</button>
+                    <button id="red">Red</button>
+                    <button id="yellow">Yellow</button>
+                    <button id="white">White</button>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+
+            <div style="text-align: center">
+                Change the font color of the fruit buttons to
+                <br/>
+                <br/>
+
+                <div id="font_buttons">
+                    <button id="black_font">Black</button>
+                    <button id="red_font">Red</button>
+                    <button id="yellow_font">Yellow</button>
+                </div>
+            </div>
+            <div style="text-align: center">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                Select a font size for your buttons
+                <select id="dropdown">
+                    <option value=30>30</option>
+                    <option value=35>35</option>
+                    <option value=40>40</option>
+                    <option value=45>45</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-xs-2">
+            <div style="text-align: center">
+                <br/>
+                <br/>
+                <br/>
+
+                <div>
+                    <div>
+                        <button id='apple' class="fruits">Apple</button>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <button id='orange' class="fruits">Orange</button>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <button id='banana' class="fruits">Banana</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="image"></div>
+</div>
+
+
+</body>
+</html>

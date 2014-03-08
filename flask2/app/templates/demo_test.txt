@@ -1,0 +1,1 @@
+this is an ajax request sent by demo_test.txt

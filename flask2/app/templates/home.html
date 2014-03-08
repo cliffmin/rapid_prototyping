@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<header id="main-header" style="background-color: lightgrey"><a href="">CNN</a>
+    <a href="">Twitter</a>
+    <a href="">Facebook</a></header>
+<br/>
+<br/>
+<br/>
+
+<div class="jumbotron container"><h1 style="text-align: center">My Webpage</h1>
+    <hr/>
+    <h3 style="text-align: center">Welcome to my webpage</h3>
+</div>
+<br/>
+<br/>
+<p>Click on the button to load result.html file:</p>
+<div id="stage" style="background-color:blue;">
+    STAGE
+</div>
+<input type="button" id="driver" value="Load Data" />
+
+<!--<header>-->
+<!--<div class="container">-->
+<!--<h1 class="logo">Flask App</h1>-->
+<!--<strong><nav>-->
+<!--<li><a href="{{ url_for('home') }}">Home</a></li>-->
+<!--<li><a href="{{ url_for('about') }}">About</a></li>-->
+<!--</nav></strong>-->
+<!--</div>-->
+
+
+<!--</header>-->
+<!--<div class="jumbotron">-->
+<!--<h2>Welcome to the Flask app<h2>-->
+<!--<h3>This is the home page for the Flask app<h3>-->
+<!--</div>-->
+{% endblock %}
